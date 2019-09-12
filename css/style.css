@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1a1a1a;
+}
+#header {
+  background-color: #1a1a1a;
+  height: 90vh;
+
+}
+
+
+/* need to add media breaks to make sure this stays the appropriate width */
+
+
+#cover {
+  opacity: 0;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:5vh;
+  margin:auto;
+  width: 40vw;
+  transition: 2s;
+}
+#menu-bar {
+  background-color: #1f1f1f;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: 0.7s;
+  z-index: 2000;
+  min-height: 52px;
+}
+#middle-wrapper {
+  position:absolute;
+  top: 30%;
+  width: 100%;
+}
+#menu-bar a{
+  display: inline;
+  color: #a2a2a2;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 0px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', cursive;
+  transition: 0.7s;
+  height: 100%;
+
+}
+
+#menu-bar a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  background-color: #1a1a1a;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 10vh;
+}
+
+.non-stick{
+  position: relative;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333333;
+}
+
+.media-sticky{
+  position: fixed;
+  top: 12vh;
+  right: 2vw;
+  display: block;
+}
+
+.media {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-style: italic;
+  font-size: 4rem;
+  /* font-style: italic; */
+  /* text-transform: capitalize; */
+}
+
+h3 {
+  font-family: 'Comfortaa', cursive;
+  color: #666666;
+}
+
+#media a{
+  display: block;
+  color: #6c98c7;
+  transition: 0.7s;
+}
+
+#media a:hover {
+  color: #c1cb6c;
+}
+
+#nav-logo {
+  position:absolute;
+  height: 80%;
+  left: 5%;
+  top: 10%;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+#nav-logo-link {
+  z-index: 2000;
+}
+
+
+#about img {
+  margin-top:9vh;
+  /* position: absolute; */
+  /* position: sticky; */
+  max-width: 100%;
+  width: 100%;
+}
+
+#products {
+  display: inline-block;
+}
+
+.product {
+  display: inline-block;
+  padding: 10px;
+}
+
+#footer {
+  height: 30vh;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.content-section {
+  text-align: center;
+  /* height: 90vh; */
+  /* font-size: 70em; */
+  /* color: #666; */
+  padding: 5%;
+}
+
+h2 {
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+
+.product-image {
+  filter: brightness(80%);
+}
+
+a:hover{
+  text-decoration: none !important;
+}
+
+
+a:hover h2 {
+  color: white;
+  transition: 0.7s;
+}
+a:hover img{
+  filter:  brightness(100%);
+  transition: 0.7s;
+}
+
+/* #gallery svg {
+  position: relative;
+  height: 20%;
+} */
+
+#mobile-gallery {
+  display: none;
+}
+
+li:nth-of-type(1n+15) {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+  #cover {
+    width: 90vw;
+  }
+
+  .product-image {
+    filter: brightness(100%);
+  }
+
+  a h2 {
+    color: white !important;
+  }
+  #mobile-gallery {
+    display:inline-block;
+  }
+  #desktop-gallery {
+    display: none;
+  }
+}
+
+.content-header {
+  padding-bottom: 5vh;
+}
+
+.product-label {
+  margin: 0;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.product-label{
+  color: gray;
+};
+
+.text-highlight a{
+  color: red !important;
+}
+
+i.fab{
+  color: #7a9e99;
+}
+
+i.fab:hover{
+  transition: 0.7s;
+  color: white;
+}
+
+#email > h3 > a{
+  color: #98b6b2;
+}
+
+#email > h3 > a:hover{
+  color: white;
+  transition: 0.7s;
+}
