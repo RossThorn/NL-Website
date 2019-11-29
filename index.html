@@ -16,7 +16,7 @@
    <div id="header">
      <img id="cover" src="images/CoverLogo.png">
    </div>
-   <div id="menu-bar" class="non-stick">
+   <div id="desktop-nav" class="menu-bar non-stick">
       <div id="middle-wrapper">
        <a href="#about">about</a>
        <a href="#music">music</a>
@@ -27,6 +27,25 @@
      <a href="#"><img id="nav-logo" src="images/navbarlogo_gray.png"></a>
 
      <!-- <div id="media" class="media"></div> -->
+   </div>
+   <div id="mobile-nav" class="menu-bar">
+    <button onclick="dropdown()" id="dropdown-icon"><i class="fas fa-bars fa-3x"></i></button>
+    <a href="#"><img id="mobile-logo" src="images/navbarlogo_gray.png"></a>
+    <div id="dropdown-content">
+      <ul>
+        <li>
+          <a onclick="dropdown()" href="#about">about</a></li>
+        <li>
+          <a onclick="dropdown()" href="#music">music</a></li>
+        <li>
+          <a onclick="dropdown()" href="#gallery">gallery</a></li>
+        <li>
+          <a onclick="dropdown()" href="#merchandise">merchandise</a></li>
+        <li>
+          <a onclick="dropdown()" href="#contact">contact</a></li>
+      </ul>
+
+   </div>
    </div>
    <div class="content">
      <div id="about-top"></div>

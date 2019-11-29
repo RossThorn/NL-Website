@@ -11,8 +11,13 @@ body {
 }
 
 
+
+
 /* need to add media breaks to make sure this stays the appropriate width */
 
+#mobile-nav {
+  display: none;
+}
 
 #cover {
   opacity: 0;
@@ -25,7 +30,7 @@ body {
   width: 40vw;
   transition: 2s;
 }
-#menu-bar {
+.menu-bar {
   background-color: #1f1f1f;
   height: 10vh;
   width: 100%;
@@ -41,7 +46,7 @@ body {
   top: 30%;
   width: 100%;
 }
-#menu-bar a{
+.menu-bar a{
   display: inline;
   color: #a2a2a2;
   padding-left: 4%;
@@ -55,7 +60,7 @@ body {
 
 }
 
-#menu-bar a:hover{
+.menu-bar a:hover{
   color: white;
   text-decoration: none;
 }
@@ -136,6 +141,7 @@ h3 {
   /* position: sticky; */
   max-width: 100%;
   width: 100%;
+  /* position: fixed; */
 }
 
 #products {
@@ -196,7 +202,42 @@ a:hover img{
 li:nth-of-type(1n+15) {
     display: none;
 }
+
+/* Mobile styling */
 @media only screen and (max-width: 800px) {
+
+  #mobile-nav {
+    display: inline-block;
+    top: 0;
+    position: fixed;
+  }
+
+  #mobile-logo {
+    position:absolute;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    opacity: 0;
+    transition: 0.7s;
+    z-index: 2001;
+  }
+
+  #dropdown-icon {
+    right: 2%;
+    top: 2%;
+    position: fixed;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: #a2a2a2;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
   #cover {
     width: 90vw;
   }
@@ -214,7 +255,51 @@ li:nth-of-type(1n+15) {
   #desktop-gallery {
     display: none;
   }
+  #dropdown-content {
+    display: none;
+    position: fixed;
+    top: 10vh;
+    width: 100%;
+    background-color: rgba(200,200,200,0.9);
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    color: black;
+  }
+
+  ul, li {
+    list-style: none;
+    list-style-position: inside;
+    list-style-type: none;
+    display:table;
+    margin:0px auto 0px auto;
+    text-align: center;
+    transition: all .5s ease;
+  }
+  ul {
+    padding: 0 !important;
+  }
+  .menu-bar a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  button:focus {
+    outline: none;
+  }
+
+  .menu-bar a{
+    color: black;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.7s;
+    height: 100%;
+
+  }
 }
+
+/* end of mobile styling*/
 
 .content-header {
   padding-bottom: 5vh;
