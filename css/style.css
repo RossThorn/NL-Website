@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #000000;
+  background-color: #1a1a1a;
 }
 #header {
   background-color: #1a1a1a;
@@ -10,22 +10,6 @@ body {
 
 }
 
-#background {
-  width: 100%;
-  height: 100%;
-}
-
-#background img{
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-    /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  filter: brightness(30%);
-}
 
 
 
@@ -124,7 +108,7 @@ h1 {
 
 h3 {
   font-family: 'Comfortaa', cursive;
-  color: white;
+  color: #666666;
 }
 
 #media a{
@@ -177,13 +161,7 @@ h3 {
 #footer {
   height: 30vh;
   text-align: center;
-  color: white;
-  z-index: 1000;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  color: #b3b3b3;
 }
 
 .content-section {
