@@ -38,6 +38,9 @@ function checkHeader() {
 }
 
 function main(){
+  if (navigator.platform == "iPhone" || navigator.platform == "iPod" || navigator.platform == "iPad"){
+    document.getElementById("dropdown-icon").style.display = "none";
+  }
 
   headerWatcher.exitViewport(function(){
     barStick();
