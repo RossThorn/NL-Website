@@ -48,6 +48,7 @@ function main(){
       mobileLogo.style.opacity = 1;
     } else {
           about.style.paddingTop = "20vh";
+          document.getElementsByClassName("about-image")[0].style.opacity = 0.3;
         if (document.getElementsByClassName("about-overlay").length > 0) {
           document.getElementsByClassName("about-overlay")[0].style.marginTop = "10vh";
         }

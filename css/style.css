@@ -208,6 +208,10 @@ li:nth-of-type(1n+15) {
     display: none;
 }
 
+.about-image {
+transition: .7s ease;
+}
+
 @media only screen and (min-width: 800px){
   .about-overlay {
     display: inline;
@@ -215,7 +219,6 @@ li:nth-of-type(1n+15) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(20, 20, 20,0.8);
     opacity: 0;
     width: 90vw;
     height: 100%;
